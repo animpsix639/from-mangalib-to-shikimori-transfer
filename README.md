@@ -11,4 +11,5 @@ If you want to change your login details run settings.py.
 
 If you want to refresh list of manga run mangalib_parser.py.
 
+# Warning 
 The program is unstable and unfinished.
