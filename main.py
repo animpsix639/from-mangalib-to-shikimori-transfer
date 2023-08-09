@@ -35,15 +35,11 @@ time.sleep(5)
 driver.find_element(By.NAME, 'user[nickname]').send_keys(info[1]['login'])
 driver.find_element(By.NAME, 'user[password]').send_keys(info[1]['password'])
 
-print('!!!ВАЖНО!!! Введите капчу, а после выполнения нажмите клавишу \'C\'')
+print('!!!ATTENTION!!!Complete the captcha and then press the \'C\' key')
 while True:
     if keyboard.is_pressed('c'):
         break
-    else:
-        continue
-
 driver.find_element(By.NAME, 'commit').click()
-
 
 for manga in info[2]:
     search = driver.find_element(By.XPATH, '//input[1]')
