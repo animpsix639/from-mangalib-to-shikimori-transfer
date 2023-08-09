@@ -8,7 +8,7 @@ from mangalib_parser import mangalib_parse
 import keyboard
 from selenium.webdriver.common.keys import Keys
 
-with open(r'C:\code\shiki  + mangalib\settings', 'rb') as f:
+with open(r'settings', 'rb') as f:
     info = pickle.load(f)
     if info[2] == '':
         mangalib_parse()
